@@ -1,0 +1,95 @@
+<div class="editor">
+  <div class="container">
+    <h1 class="text-center mt-0 mb-0">Aqui puedes reservar tus horas, pon mucha atencion a
+      cada cosa que se pide y explica bien lo que quieras plantear</h1>
+  </div>
+
+  <div class="container text-black rounded shadow-lg p-3 mt-3 mb-5 text-center">
+    <div class="editor">
+      <div class="form-row">
+        <form [formGroup]="form" class="m-auto p-auto">
+          <i><b>
+
+            </b></i>
+          <i><b>
+              <p>
+                Indicanos cuando quieres que concretemos la fecha (dependiendo de los horarios disponible mas abajo):
+                <br />
+                <input class="form-control" type="date" formControlName="date">
+              </p>
+            </b></i>
+          <b> <i>
+              <p>
+                Selecciona un horario si elegiste un dia de semana
+                <select class="form-control" formControlName="horas">
+                  <option value="0">Vacio</option>
+                  <option value="1">8 am a 9am</option>
+                  <option value="2">9 am a 10 am </option>
+                  <option value="3">11 am a 12 pm</option>
+                  <option value="4">12 pm a 13 pm</option>
+                  <option value="5">13 pm a 14 pm</option>
+                  <option value="6">14 pm a 15 pm</option>
+                  <option value="7">15 pm a 16 pm</option>
+                  <option value="8">16 pm a 17 pm</option>
+                </select>
+              </p>
+            </i></b>
+
+          <i> <b>
+
+            </b></i>
+          <i> <b>
+
+            </b>
+
+          </i>
+          <i> <b>
+              <p aria-setsize="70px">
+                Selecciona si quieres contratar o actualizar: <br />
+                <select class="form-control" formControlName="Venta">
+                  <option value="1">Contratar Servicio</option>
+                  <option value="2">Actualizar Servicio</option>
+                </select>
+              </p>
+            </b></i>
+          <i> <b>
+              <p aria-setsize="70px">
+                Tipo de servicio (Contratacion): <br />
+                <select class="form-control" formControlName="tipoServicio">
+                  <option value="1">Reparacion de disco duro</option>
+                  <option value="2">Instalacion de programas</option>
+                  <option value="3">Armado de equipo</option>
+                  <option value="4">Otro</option>
+                </select>
+              </p>
+            </b></i>
+
+          <i> <b>
+              <p aria-setsize="70px">
+                Tipo de servicio (Actualizacion): <br />
+                <select class="form-control" formControlName="tipoServicio">
+                  <option value="1">Cambio de disco duro</option>
+                  <option value="2">Reparacion y/o recuperacion de datos</option>
+                  <option value="3">Inclusion de nuevos elementos de hardware</option>
+                  <option value="4">Otro</option>
+                </select>
+              </p>
+            </b></i>
+          <i> <b>
+              <p>
+                Si seleccionaste Otro (Contratacion y/o Actualizacion), redacta tu problema aqui: <br />
+                <textarea cols="30" rows="5" formControlName="text"></textarea>
+              </p>
+            </b></i>
+          <button class="btn btn-primary">Enviar peticion </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container text-black rounded shadow-lg p-3 mt-3 mb-5 text-center">
+    <ul>
+      <h2>Horarios de la empresa: </h2>
+      <li>Lunes a Viernes: <p>Atenderemos de 8 am a 5 pm </p>
+
+    </ul>
+  </div>

@@ -1,0 +1,37 @@
+<h1 class="text-center mt-2 mb-2">Bienvenido al formulario de registro</h1>
+<div class="container text-black rounded shadow-lg p-3 mb-5 text-center">
+    <div class="form-row">
+        <div class="col pb-5">
+            <input type="text" class="form-control" placeholder="Ingrese su nombre completo">
+        </div>
+
+    </div>
+    <div class="form-row">
+        <div class="col pb-5">
+            <input type="email" class="form-control" placeholder="Ingrese su correo electonico">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Ingrese su nombre de usuario">
+        </div>
+
+    </div>
+    <div class="form-row">
+
+        <div class="col-6 pb-5">
+            <input type="text" class="form-control" placeholder="Ingrese su telefono para contactarse.">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col">
+            <input type="password" class="form-control" placeholder="Ingrese una contraseña"
+                pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]*" required maxlength="10" required>
+            <mat-hint>Ingrese una contraseña de max 10 caracteres, incluyendo
+                una mayuscula y un numero
+            </mat-hint>
+        </div>
+        <div class="col">
+            <input type="password" class="form-control" placeholder="Repita su contraseña"
+                pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]*" required maxlength="10" required>
+        </div>
+    </div>
+    <button mat-button class="btn btn-primary m-4 mt-4">Registrarse</button>

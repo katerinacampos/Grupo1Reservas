@@ -1,0 +1,11 @@
+.editor{
+    background-color: white;
+}
+p{
+    margin-top: 25px;
+    color: black;
+    font-size: medium;
+}
+h1,h2{
+    margin-bottom: 40px;
+}
