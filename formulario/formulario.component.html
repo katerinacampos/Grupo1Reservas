@@ -1,6 +1,6 @@
 <div class="editor">
   <div class="container">
-    <h1 class="text-center mt-0 mb-0">Aqui puedes reservar tus horas, pon mucha atencion a
+    <h1 class="text-center mt-0 mb-0">Aquí puedes reservar tus horas, pon mucha atención a
       cada cosa que se pide y explica bien lo que quieras plantear</h1>
   </div>
 
@@ -20,7 +20,7 @@
             </b></i>
           <b> <i>
               <p>
-                Selecciona un horario si elegiste un dia de semana
+                Selecciona un horario:
                 <select class="form-control" formControlName="horas">
                   <option value="0">Vacio</option>
                   <option value="1">8 am a 9am</option>
@@ -54,34 +54,36 @@
             </b></i>
           <i> <b>
               <p aria-setsize="70px">
-                Tipo de servicio (Contratacion): <br />
+                Tipo de servicio (Contratación): <br />
                 <select class="form-control" formControlName="tipoServicio">
                   <option value="1">Reparacion de disco duro</option>
-                  <option value="2">Instalacion de programas</option>
+                  <option value="2">Instalación de programas</option>
                   <option value="3">Armado de equipo</option>
                   <option value="4">Otro</option>
+                  <option value="5">Nulo (se selecciono Actualización)</option>
                 </select>
               </p>
             </b></i>
 
           <i> <b>
               <p aria-setsize="70px">
-                Tipo de servicio (Actualizacion): <br />
+                Tipo de servicio (Actualización): <br />
                 <select class="form-control" formControlName="tipoServicio">
                   <option value="1">Cambio de disco duro</option>
                   <option value="2">Reparacion y/o recuperacion de datos</option>
                   <option value="3">Inclusion de nuevos elementos de hardware</option>
                   <option value="4">Otro</option>
+                  <option value="5">Nulo (se selecciono Contratación)</option>
                 </select>
               </p>
             </b></i>
           <i> <b>
               <p>
-                Si seleccionaste Otro (Contratacion y/o Actualizacion), redacta tu problema aqui: <br />
+                Si seleccionaste Otro (Contratación y/o Actualización), redacta tu problema aquí: <br />
                 <textarea cols="30" rows="5" formControlName="text"></textarea>
               </p>
             </b></i>
-          <button class="btn btn-primary">Enviar peticion </button>
+          <button class="btn btn-primary">Enviar petición </button>
         </form>
       </div>
     </div>
