@@ -13,85 +13,181 @@
             </b></i>
           <i><b>
               <p>
-                Indicanos cuando quieres que concretemos la fecha (dependiendo de los horarios disponible mas abajo):
+                Indicanos cuando quieres que concretemos la fecha :
                 <br />
-                <input class="form-control" type="date" formControlName="date">
+                <br>
+                <input class="form-control" style='width:60%' type="date" formControlName="date">
               </p>
             </b></i>
-          <b> <i>
+
+
+          <div class="input-group mb-3" style='width:60%'>
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Indique horario:</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+              placeholder="Ingrese número deseado.">
+          </div>
+
+          <ul class="list-group">
+            <li class="list-group-item active">Horarios de la empresa:</li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              8:00-8:30
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              8:30-9:00
+              <span class="badge badge-primary badge-pill">2</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              9:00-9:30
+              <span class="badge badge-primary badge-pill">3</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              9:30-10:00
+              <span class="badge badge-primary badge-pill">4</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              10:00-10:30
+              <span class="badge badge-primary badge-pill">5</span>
+            </li>
+          </ul>
+
+          <ul class="list-group">
+            <li class="list-group-item">+</li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              10:30-11:00
+              <span class="badge badge-primary badge-pill">6</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              11:00-11:30
+              <span class="badge badge-primary badge-pill">7</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              11:30-12:00
+              <span class="badge badge-primary badge-pill">8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              12:00-12:30
+              <span class="badge badge-primary badge-pill">9</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              12:30-13:00
+              <span class="badge badge-primary badge-pill">10</span>
+            </li>
+          </ul>
+          <ul class="list-group">
+            <li class="list-group-item">-Horario de Colación de 13:00 a 14:30-</li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              14:30-15:00
+              <span class="badge badge-primary badge-pill">11</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              15:00-15:30
+              <span class="badge badge-primary badge-pill">12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              15:30-16:00
+              <span class="badge badge-primary badge-pill">13</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              16:00-16:30
+              <span class="badge badge-primary badge-pill">14</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              16:30-17:00
+              <span class="badge badge-primary badge-pill">15</span>
+            </li>
+          </ul>
+
+
+          <i> <b>
               <p>
-                Selecciona un horario:
-                <select class="form-control" formControlName="horas">
-                  <option value="0">Vacio</option>
-                  <option value="1">8 am a 9am</option>
-                  <option value="2">9 am a 10 am </option>
-                  <option value="3">11 am a 12 pm</option>
-                  <option value="4">12 pm a 13 pm</option>
-                  <option value="5">13 pm a 14 pm</option>
-                  <option value="6">14 pm a 15 pm</option>
-                  <option value="7">15 pm a 16 pm</option>
-                  <option value="8">16 pm a 17 pm</option>
-                </select>
-              </p>
-            </i></b>
-
-          <i> <b>
-
-            </b></i>
-          <i> <b>
-
-            </b>
-
-          </i>
-          <i> <b>
-              <p aria-setsize="70px">
                 Selecciona si quieres contratar o actualizar: <br />
-                <select class="form-control" formControlName="Venta">
+                <br>
+                <select class="form-control" formControlName="Venta" style='width:60%'>
                   <option value="1">Contratar Servicio</option>
                   <option value="2">Actualizar Servicio</option>
                 </select>
               </p>
             </b></i>
-          <i> <b>
-              <p aria-setsize="70px">
-                Tipo de servicio (Contratación): <br />
-                <select class="form-control" formControlName="tipoServicio">
-                  <option value="1">Reparacion de disco duro</option>
-                  <option value="2">Instalación de programas</option>
-                  <option value="3">Armado de equipo</option>
-                  <option value="4">Otro</option>
-                  <option value="5">Nulo (se selecciono Actualización)</option>
-                </select>
-              </p>
-            </b></i>
+          <br>
 
-          <i> <b>
-              <p aria-setsize="70px">
-                Tipo de servicio (Actualización): <br />
-                <select class="form-control" formControlName="tipoServicio">
-                  <option value="1">Cambio de disco duro</option>
-                  <option value="2">Reparacion y/o recuperacion de datos</option>
-                  <option value="3">Inclusion de nuevos elementos de hardware</option>
-                  <option value="4">Otro</option>
-                  <option value="5">Nulo (se selecciono Contratación)</option>
-                </select>
-              </p>
-            </b></i>
+          <div class="input-group mb-3" style='width:60%'>
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Indique servicio a elegir:</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+              placeholder="Ingrese número deseado.">
+          </div>
+
+
+          <ul class="list-group">
+            <li class="list-group-item active">Tipo de servicio (Contratación):</li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Reparación de disco duro
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Instalación de programas/formateo
+              <span class="badge badge-primary badge-pill">2</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Armado de equipo/Cotizaciones
+              <span class="badge badge-primary badge-pill">3</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Otro (Favor redactar su problema en el cuadro de texto)
+              <span class="badge badge-primary badge-pill">4</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Nulo (Se eligió Actualizar un servicio)
+              <span class="badge badge-primary badge-pill">5</span>
+            </li>
+          </ul>
+
+          <hr>
+          <div class="input-group mb-3" style='width:60%'>
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Indique servicio a elegir:</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+              placeholder="Ingrese número deseado.">
+          </div>
+
+          <ul class="list-group">
+            <li class="list-group-item active">Tipo de servicio (Actualización):</li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Cambio de disco duro
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Reparación y/o recuperacion de datos de disco
+              <span class="badge badge-primary badge-pill">2</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Inclusión de nuevos elementos de hardware
+              <span class="badge badge-primary badge-pill">3</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Otro (Favor redactar su problema en el cuadro de texto)
+              <span class="badge badge-primary badge-pill">4</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Nulo (Se eligió Contratar un servicio)
+              <span class="badge badge-primary badge-pill">5</span>
+            </li>
+          </ul>
+
           <i> <b>
               <p>
                 Si seleccionaste Otro (Contratación y/o Actualización), redacta tu problema aquí: <br />
-                <textarea cols="30" rows="5" formControlName="text"></textarea>
+                <textarea cols="100" rows="5" formControlName="text"></textarea>
               </p>
             </b></i>
           <button class="btn btn-primary">Enviar petición </button>
         </form>
       </div>
     </div>
-  </div>
-  <div class="container text-black rounded shadow-lg p-3 mt-3 mb-5 text-center">
-    <ul>
-      <h2>Horarios de la empresa: </h2>
-      <li>Lunes a Viernes: <p>Atenderemos de 8 am a 5 pm </p>
-
-    </ul>
   </div>
