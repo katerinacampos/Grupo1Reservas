@@ -24,9 +24,20 @@ h1,h2{
     display: inline-flex;
     width: 50px;
     margin: 50px;
-    text-align: center;
-    margin-left: 10000px;
-
-    
-    
+    text-align: center;    
 }
+.parent{
+    position: absolute;}
+
+.responsive{
+        max-width:100%;
+        max-height:100%;
+    }
+     
+.center{
+        position: relative;
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+
