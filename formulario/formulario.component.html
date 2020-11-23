@@ -16,25 +16,44 @@
                 Indicanos cuando quieres que concretemos la fecha :
                 <br />
                 <br>
-                <input class="form-control" style='width:40%' type="date" formControlName="date">
+                <input class="form-control" style="text-align: center; width:41%;margin-left: 250px;" type="date"
+                  formControlName="date">
               </p>
             </b></i>
+          <hr>
           <i><b>
               <p>
-                Por favor, revisa los bloques de horarios que se indican mas abajo e ingresa el número correspondiente
-                de tu preferencia. <br>
-                Ingresa el numero correspondiente de los horarios mostrados (estan marcados en azul)
-
+                Por favor, revisa los bloques de horarios que se indican mas abajo <br>
+                y selecciona la hora de tu preferencia. <br>
               </p>
             </b></i>
 
-          <div class="input-group mb-3" style='width:40%'>
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Indique horario:</span>
-            </div>
-            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
-              placeholder="Ingrese número deseado.">
-          </div>
+
+          <b> <i>
+              <p>
+                Selecciona un horario:
+                <select class="form-control" formControlName="horas"
+                  style="text-align: center; width:41%;margin-left: 250px;">
+                  <option value="0">Vacio</option>
+                  <option value="1">8:00-8:30</option>
+                  <option value="2">8:30-9:00 </option>
+                  <option value="3">9:00-9:30</option>
+                  <option value="4">9:30-10:00</option>
+                  <option value="5">10:00-10:30</option>
+                  <option value="6">10:30-11:00</option>
+                  <option value="7">11:00-11:30</option>
+                  <option value="8">11:30-12:00</option>
+                  <option value="8">12:00-12:30</option>
+                  <option value="8">12:30-13:00</option>
+                  <option value="8">14:30-15:00</option>
+                  <option value="8">15:00-15:30</option>
+                  <option value="8">15:30-16:00</option>
+                  <option value="8">16:00-16:30</option>
+                  <option value="8">16:30-17:00</option>
+                </select>
+              </p>
+            </i></b>
+
 
 
 
@@ -109,102 +128,70 @@
               <span class="badge badge-primary badge-pill">15</span>
             </li>
           </ul>
+          <hr>
 
 
           <i> <b>
               <p>
                 Selecciona si quieres contratar o actualizar: <br />
                 <br>
-                <select class="form-control" formControlName="Venta" style='width:40%'>
+                <select class="form-control" formControlName="Venta"
+                  style="text-align: center; width:41%;margin-left: 250px;">
                   <option value="1">Contratar Servicio</option>
                   <option value="2">Actualizar Servicio</option>
                   <option value="3">Otro</option>
                 </select>
               </p>
             </b></i>
-          <br>
+          <hr>
+
 
           <i><b>
               <p>
-                A continuación, revisa los servicios indicados en las tablas de Contratación y de Actualizar.
-                Luego escribe el número correspondiente a tu elección. Recuerda que si no aparece indicado puedes
-                indicar 4 y luego escribir
-                tu petición personalizada mas abajo.
+                A continuación, revisa los servicios indicados en los Tipos de Servicios de Contratación y de
+                Actualizar. <br>
+                Recuerda que si no aparece indicado, puedes indicar 4 y luego escribir tu petición personalizada mas
+                abajo.
 
 
               </p>
             </b></i>
 
-          <div class="input-group mb-3" style='width:40%'>
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Indique servicio a elegir:</span>
-            </div>
-            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
-              placeholder="Ingrese número deseado.">
-          </div>
+          <i> <b>
+              <p>
+                Tipo de servicio (Contratación):<br />
+                <br>
+                <select class="form-control" formControlName="Servicio"
+                  style="text-align: center; width:41%;margin-left: 250px;">
+                  <option value="1">Reparación de disco duro</option>
+                  <option value="2">Instalación de programas/formateo</option>
+                  <option value="3">Armado de equipo/Cotizaciones</option>
+                  <option value="4">Otro (Favor redactar su problema en el cuadro de texto)</option>
+                  <option value="5">Nulo (Se eligió Actualizar un servicio)</option>
+                </select>
+              </p>
+            </b></i>
 
 
-          <ul class="list-group">
-            <li class="list-group-item active">Tipo de servicio (Contratación):</li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Reparación de disco duro
-              <span class="badge badge-primary badge-pill">1</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Instalación de programas/formateo
-              <span class="badge badge-primary badge-pill">2</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Armado de equipo/Cotizaciones
-              <span class="badge badge-primary badge-pill">3</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Otro (Favor redactar su problema en el cuadro de texto)
-              <span class="badge badge-primary badge-pill">4</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Nulo (Se eligió Actualizar un servicio)
-              <span class="badge badge-primary badge-pill">5</span>
-            </li>
-          </ul>
-
-          <hr>
-          <div class="input-group mb-3" style='width:40%'>
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Indique servicio a elegir:</span>
-            </div>
-            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
-              placeholder="Ingrese número deseado.">
-          </div>
-
-          <ul class="list-group">
-            <li class="list-group-item active">Tipo de servicio (Actualización):</li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Cambio de disco duro
-              <span class="badge badge-primary badge-pill">1</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Reparación y/o recuperacion de datos de disco
-              <span class="badge badge-primary badge-pill">2</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Inclusión de nuevos elementos de hardware
-              <span class="badge badge-primary badge-pill">3</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Otro (Favor redactar su problema en el cuadro de texto)
-              <span class="badge badge-primary badge-pill">4</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Nulo (Se eligió Contratar un servicio)
-              <span class="badge badge-primary badge-pill">5</span>
-            </li>
-          </ul>
+          <i> <b>
+              <p>
+                Tipo de servicio (Actualización):<br />
+                <br>
+                <select class="form-control" formControlName="Servicio"
+                  style="text-align: center; width:41%;margin-left: 250px;">
+                  <option value="1">Cambio de disco duro</option>
+                  <option value="2">Reparación y/o recuperacion de datos de disco</option>
+                  <option value="3">Inclusión de nuevos elementos de hardware</option>
+                  <option value="4">Otro (Favor redactar su problema en el cuadro de texto)</option>
+                  <option value="5">Nulo (Se eligió Contratar un servicio)</option>
+                </select>
+              </p>
+            </b></i>
 
           <i> <b>
               <p>
                 Si seleccionaste Otro (Contratación y/o Actualización), redacta tu problema aquí: <br />
-                <textarea cols="100" rows="5" formControlName="text"></textarea>
+                <textarea cols="80" rows="5" formControlName="text"></textarea>
               </p>
             </b></i>
           <button class="btn btn-primary">Enviar petición </button>
